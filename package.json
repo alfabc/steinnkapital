@@ -1,0 +1,46 @@
+{
+  "name": "steinnkapital",
+  "version": "1.0.0",
+  "description": "Steinn Kapital smart contract",
+  "main": "index.js",
+  "scripts": {
+    "compile": "truffle compile",
+    "coverage": "./node_modules/.bin/solidity-coverage",
+    "solium": "./node_modules/.bin/solium --dir contracts/",
+    "lint": "./node_modules/.bin/eslint .",
+    "migrate-ganache": "truffle migrate --network ganache",
+    "migrate-ropsten": "truffle migrate --network ropsten",
+    "test": "truffle test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alfabc/steinnkapital.git"
+  },
+  "keywords": [
+    "solidity",
+    "javascript",
+    "truffle",
+    "node"
+  ],
+  "author": "",
+  "license": "AGPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/alfabc/steinnkapital/issues"
+  },
+  "homepage": "https://github.com/alfabc/steinnkapital#readme",
+  "dependencies": {
+    "eslint": "^5.7.0",
+    "solidity-coverage": "^0.5.11",
+    "solium": "^1.1.8",
+    "truffle": "^4.1.14"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-babel": "^5.2.1",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0"
+  }
+}
