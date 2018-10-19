@@ -17,7 +17,7 @@ contract('SteinnToken', (accounts) => {
       (await steinnToken.name()).should.eq('Steinn Token 1');
       (await steinnToken.symbol()).should.eq('STEINN.1');
       (await steinnToken.decimals()).toNumber().should.eq(0);
-      (await steinnToken.isMinter(minter)).should.be.true;
+      (await steinnToken.isMinter(minter)).should.be.true // eslint-disable-line no-unused-expressions
     })
   })
 })
