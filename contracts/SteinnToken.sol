@@ -12,7 +12,7 @@ import "openzeppelin-solidity/contracts/token/ERC20/ERC20Mintable.sol";
 contract SteinnToken is ERC20, ERC20Detailed, ERC20Mintable {
   constructor(string name, string symbol, uint8 decimals, address minter)
     ERC20Detailed(name, symbol, decimals) ERC20Mintable() ERC20() public {
-      addMinter(minter);
+    addMinter(minter);
   }
 }
 
