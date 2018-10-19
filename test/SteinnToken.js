@@ -13,10 +13,11 @@ contract('SteinnToken', (accounts) => {
 
   context('initialization', () => {
     it('should accept correct constructor arguments', async () => {
-      steinnToken = await SteinnToken.new('Steinn Token 1', 'STEINN.1', 0, minter);
+      steinnToken = await SteinnToken.new('Steinn Token 1', 'STEINN.1', 0, 2000, minter);
       (await steinnToken.name()).should.eq('Steinn Token 1');
       (await steinnToken.symbol()).should.eq('STEINN.1');
       (await steinnToken.decimals()).toNumber().should.eq(0);
+      (await steinnToken.cap()).toNumber().should.eq(2000);
       (await steinnToken.isMinter(minter)).should.be.true // eslint-disable-line no-unused-expressions
     })
   })
